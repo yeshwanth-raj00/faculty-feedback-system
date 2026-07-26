@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chairman Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+.header{
+background:#6f42c1;
+color:white;
+padding:20px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width:250px;
+height:100vh;
+background:#2d1b69;
+}
+
+.sidebar a{
+display:block;
+padding:18px;
+color:white;
+text-decoration:none;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar a:hover{
+background:#6f42c1;
+}
+
+.content{
+flex:1;
+padding:25px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.card h2{
+color:#6f42c1;
+font-size:30px;
+}
+
+table{
+width:100%;
+background:white;
+border-collapse:collapse;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+th{
+background:#6f42c1;
+color:white;
+padding:12px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border:1px solid #ddd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+👔 Chairman Dashboard
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<a href="#">🏠 Dashboard</a>
+<a href="#">🏫 College Overview</a>
+<a href="#">🏢 Departments</a>
+<a href="#">👨‍🏫 Faculty Performance</a>
+<a href="#">⭐ Feedback Reports</a>
+<a href="#">📊 Analytics</a>
+<a href="#">💬 Complaints</a>
+<a href="index.html">🚪 Logout</a>
+
+</div>
+
+<div class="content">
+
+<div class="cards">
+
+<div class="card">
+<h2>3500</h2>
+<p>Total Feedback</p>
+</div>
+
+<div class="card">
+<h2>220</h2>
+<p>Total Faculty</p>
+</div>
+
+<div class="card">
+<h2>15</h2>
+<p>Departments</p>
+</div>
+
+<div class="card">
+<h2>4.9 ⭐</h2>
+<p>College Rating</p>
+</div>
+
+</div>
+
+<h2>College Performance Report</h2>
+
+<br>
+
+<table>
+
+<tr>
+<th>Department</th>
+<th>Faculty</th>
+<th>Average Rating</th>
+<th>Feedback</th>
+</tr>
+
+<tr>
+<td>CSE</td>
+<td>35</td>
+<td>4.9 ⭐</td>
+<td>700</td>
+</tr>
+
+<tr>
+<td>ECE</td>
+<td>30</td>
+<td>4.8 ⭐</td>
+<td>620</td>
+</tr>
+
+<tr>
+<td>EEE</td>
+<td>28</td>
+<td>4.7 ⭐</td>
+<td>550</td>
+</tr>
+
+<tr>
+<td>MECH</td>
+<td>24</td>
+<td>4.6 ⭐</td>
+<td>480</td>
+</tr>
+
+<tr>
+<td>CIVIL</td>
+<td>20</td>
+<td>4.5 ⭐</td>
+<td>430</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

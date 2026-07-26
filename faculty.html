@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faculty Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#2563eb);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:450px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+color:#0f172a;
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+}
+
+button{
+width:100%;
+margin-top:25px;
+padding:14px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>👨‍🏫 Faculty Login</h1>
+
+<form id="facultyForm">
+
+<label>Faculty ID</label>
+<input type="text" id="id" placeholder="Enter Faculty ID" required>
+
+<label>Faculty Name</label>
+<input type="text" id="name" placeholder="Enter Faculty Name" required>
+
+<label>Department</label>
+<select required>
+<option>CSE</option>
+<option>CSE(AI)</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>MECH</option>
+<option>CIVIL</option>
+</select>
+
+<label>Password</label>
+<input type="password" id="password" placeholder="Enter Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("facultyForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    window.location.href = "faculty_dashboard.html";
+
+});
+
+</script>
+
+</script>
+
+</body>
+</html>

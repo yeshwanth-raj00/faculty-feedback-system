@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Details</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:25px;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎓 Student Details</h1>
+
+<form id="studentForm">
+
+<label>Student Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<label>Roll Number</label>
+<input type="text" id="roll" placeholder="Enter Roll Number" required>
+
+<label>Branch</label>
+<select id="branch" required>
+<option value="">Select Branch</option>
+<option>CSE</option>
+<option>CSE(AI)</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>MECH</option>
+<option>CIVIL</option>
+</select>
+
+<label>Course</label>
+<input type="text" id="course" value="B.Tech" required>
+
+<label>Section</label>
+<select id="section" required>
+<option value="">Select Section</option>
+<option>A</option>
+<option>B</option>
+<option>C</option>
+</select>
+
+<label>Year</label>
+<select id="year" required>
+<option value="">Select Year</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+<button type="submit">Continue</button>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("studentForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let roll = document.getElementById("roll").value;
+
+    alert(
+        "Welcome " + name +
+        "\nRoll Number: " + roll +
+        "\nProceeding to Faculty Feedback Page..."
+    );
+
+    window.location.href = "feedback.html";
+
+});
+
+</script>
+
+
+</body>
+</html>

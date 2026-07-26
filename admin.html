@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#2563eb);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:450px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+text-align:center;
+}
+
+h1{
+margin-bottom:25px;
+color:#0f172a;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:8px;
+font-size:18px;
+background:#2563eb;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🛡️ Admin Panel</h1>
+
+<button onclick="hod()">👨‍💼 HOD Login</button>
+
+<button onclick="principal()">🏫 Principal Login</button>
+
+<button onclick="chairman()">👔 Chairman Login</button>
+
+</div>
+
+<script>
+
+function hod(){
+window.location.href="hod.html";
+}
+
+function principal(){
+window.location.href="principal.html";
+}
+
+function chairman(){
+window.location.href="chairman.html";
+}
+
+</script>
+
+</body>
+</html>
